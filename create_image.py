@@ -10,5 +10,6 @@ cv2.imshow('img2',img)
 img[:,:] = [0,0,255]
 cv2.imwrite('redImage.jpg', img)
 cv2.imshow('img3',img)
-cv2.waitKey(0)
+retval = cv2.waitKey(0)
+print(retval)
 cv2.destroyAllWindows()
